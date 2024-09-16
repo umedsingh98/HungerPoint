@@ -1,0 +1,89 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url("../../assets/frontend/header_img.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    border-radius:20px;
+}
+
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 2s;
+}
+
+.header-content h1{
+    font-weight: 500;
+    font-size: max(4.5vw);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.header-content p{
+    color: white;
+    font-size: max(1vw);
+    font-family: "Poppins";
+}
+
+.header-content button{
+    background-color: #ffffff;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    padding: 15px 20px;
+    border: none;
+    font-size: max(1vw);
+    border-radius: 30px;
+    cursor: pointer;
+   
+}
+
+.header-content button:hover{
+  background-color: #FFA500;
+  color: white; 
+  transition: 0.2s ease;
+}
+
+@keyframes fadeIn{
+    0%{
+     opacity: 0;
+    }
+
+    100%{
+     opacity: 1;
+    }
+}
+
+@media (max-width: 1050px){
+    .header{
+        height: 38vw;
+    }
+
+    .header-content{
+        max-width: 45%;
+    }
+}
+
+
+@media (max-width: 750px){
+
+
+    .header-content{
+        max-width: 55%;
+    }
+    
+    .header-content p{
+      display: none;
+    }
+
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}

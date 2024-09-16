@@ -1,0 +1,171 @@
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar .logo h2{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Poppins";
+    transition: 0.3s ease;
+}
+
+.navbar .logo #point{
+    font-size: 26px;
+    font-weight: 700;
+    color: red;
+    font-family: "Poppins";
+    transition: 0.3s ease;
+}
+
+.navbar .logo img{
+    width: 50px;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color: #000000;
+    font-size: 19px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.signIn{
+    background: orange;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signIn:hover{
+    background: green;
+    color: #ffffff;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar-search-icon{
+position: relative;
+}
+
+.navbar-search-icon .dot{
+position: absolute;
+min-width: 10px;
+min-height: 10px;
+background-color: tomato;
+border-radius: 5px;
+top: -7px;
+right: -5px;
+}
+
+@media (max-width: 1050px){
+    .navbar .logo h2{
+        font-size: 20px;
+    }
+    .navbar .logo #point{
+        font-size: 18px;
+    }
+    .navbar .logo img{
+        width: 40px;
+    }
+    
+    .navbar-menu{
+        gap: 20px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }   
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+
+
+@media (max-width: 900px){
+
+    .navbar{
+        width: 100%;
+    }
+    .navbar .logo h2{
+        font-size: 18px;
+    }
+    .navbar .logo #point{
+        font-size: 18px;
+    }
+    .navbar .logo img{
+        width: 30px;
+    }
+    
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }   
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px){
+    .navbar .logo h2{
+        font-size: 18px;
+    }
+    .navbar .logo #point{
+        font-size: 18px;
+    }
+    .navbar .logo img{
+        width: 30px;
+    }
+    
+    .navbar-menu{
+      display: none;
+    }
+    .navbar-right{
+        gap: 20px;
+    }   
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 14px;
+    }
+}
