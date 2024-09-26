@@ -1,4 +1,4 @@
-/* General styles for the navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,10 +23,9 @@
   }
   
   #point {
-    color: #ff6347; /* Example for point color */
+    color: #ff6347; 
   }
   
-  /* Navbar Menu */
   .navbar-menu {
     display: flex;
     list-style: none;
@@ -39,10 +38,9 @@
   
   .navbar-menu li.active {
     font-weight: bold;
-    color: #ff6347; /* Active menu item color */
+    color: #ff6347; 
   }
-  
-  /* Right section (search and sign-in) */
+
   .navbar-right {
     display: flex;
     align-items: center;
@@ -77,27 +75,26 @@
     margin-left: 15px;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 768px) {
-    /* Stack the menu and logo vertically on smaller screens */
+   
     .navbar {
       flex-direction: column;
       align-items: flex-start;
     }
   
-    /* Adjust logo size */
+    
     .logo h2 {
       font-size: 20px;
     }
   
-    /* Hide the menu initially on small screens */
+  
     .navbar-menu {
       display: none;
       flex-direction: column;
       width: 100%;
     }
   
-    /* Toggle menu visibility */
     .navbar-menu.active {
       display: flex;
     }
@@ -106,7 +103,6 @@
       margin: 10px 0;
     }
   
-    /* Adjust button size */
     .signIn {
       padding: 8px 12px;
       font-size: 14px;
@@ -114,7 +110,7 @@
   }
   
   @media (max-width: 480px) {
-    /* Further adjustments for very small screens */
+   
     .logo img {
       width: 40px;
     }
