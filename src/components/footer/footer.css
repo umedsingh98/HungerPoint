@@ -83,3 +83,17 @@
     text-align: center;
     
 }
+
+@media (max-width: 500px){
+
+    
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .footer-copyright{
+    text-align: center;
+  }
+}

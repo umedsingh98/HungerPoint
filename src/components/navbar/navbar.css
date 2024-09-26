@@ -1,131 +1,218 @@
-
-.navbar {
+.navbar{
+    right: 0;
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-  }
-  
-  .logo {
+}
+
+.navbar .logo{
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .logo img {
+    width: 100px;
+}
+
+.navbar .logo h2{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Poppins";
+    transition: 0.3s ease;
+}
+
+.navbar .logo #point{
+    font-size: 26px;
+    font-weight: 700;
+    color: red;
+    font-family: "Poppins";
+    transition: 0.3s ease;
+}
+
+.navbar .logo img{
     width: 50px;
-    height: auto;
-  }
-  
-  .logo h2 {
-    margin-left: 10px;
-    font-size: 24px;
-  }
-  
-  #point {
-    color: #ff6347; 
-  }
-  
-  .navbar-menu {
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar-menu{
     display: flex;
     list-style: none;
-  }
-  
-  .navbar-menu li {
-    margin-left: 20px;
+    gap: 20px;
+    color: #000000;
+    font-size: 19px;
+    font-family: "Poppins";
     cursor: pointer;
-  }
-  
-  .navbar-menu li.active {
-    font-weight: bold;
-    color: #ff6347; 
-  }
+    font-weight: 600;
+}
 
-  .navbar-right {
+.navbar-right{
     display: flex;
+    gap: 40px;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .navbar-right img {
-    width: 25px;
-    margin-right: 10px;
-  }
-  
-  .navbar-search-icon {
-    position: relative;
-  }
-  
-  .navbar-search-icon .dot {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-  }
-  
-  .signIn {
-    padding: 8px 16px;
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 15px;
-  }
-  
+}
 
-  @media (max-width: 768px) {
-   
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+.signIn{
+    background: orange;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signIn:hover{
+    background: green;
+    color: #ffffff;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar-search-icon{
+position: relative;
+}
+
+.navbar-search-icon .dot{
+position: absolute;
+min-width: 10px;
+min-height: 10px;
+background-color: tomato;
+border-radius: 5px;
+top: -7px;
+right: -5px;
+}
+
+@media (max-width: 1050px){
+    .navbar{
+        width: 100%;
     }
-  
+    .navbar .logo h2{
+        font-size: 20px;
+    }
+    .navbar .logo #point{
+        font-size: 20px;
+    }
+    .navbar .logo img{
+        width: 40px;
+    }
     
-    .logo h2 {
-      font-size: 20px;
+    .navbar-menu{
+        gap: 20px;
+        font-size: 16px;
     }
-  
-  
-    .navbar-menu {
-      display: none;
-      flex-direction: column;
+    .navbar-right{
+        gap: 30px;
+    }   
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 20px;
+    }
+}
+
+
+@media (max-width: 900px){
+
+    .navbar{
+        width: 100%;
+    }
+    .navbar .logo h2{
+        font-size: 18px;
+    }
+    .navbar .logo #point{
+        font-size: 18px;
+    }
+    .navbar .logo img{
+        width: 30px;
+    }
+    
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }   
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px){
+    html,body {
       width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
-  
-    .navbar-menu.active {
-      display: flex;
+    .navbar .logo h2{
+        font-size: 18px;
     }
-  
-    .navbar-menu li {
-      margin: 10px 0;
+    .navbar .logo #point{
+        font-size: 18px;
     }
-  
-    .signIn {
-      padding: 8px 12px;
-      font-size: 14px;
+    .navbar .logo img{
+        width: 30px;
     }
-  }
-  
-  @media (max-width: 480px) {
-   
-    .logo img {
-      width: 40px;
+    
+    .navbar-menu{
+      display: none;
     }
-  
-    .logo h2 {
-      font-size: 18px;
+    .navbar-right{
+        gap: 20px;
+    }   
+    .navbar-right img{
+        width: 20px;
     }
-  
-    .navbar-right img {
-      width: 20px;
+    .navbar-right button{
+        padding: 6px 18px;
+        font-size: 14px;
     }
-  
-    .signIn {
-      padding: 6px 10px;
-      font-size: 12px;
+}
+
+
+@media (max-width: 450px){
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
-  }
-  
+
+    .navbar .logo h2{
+        font-size: 18px;
+    }
+    .navbar .logo #point{
+        font-size: 18px;
+    }
+    .navbar .logo img{
+        width: 30px;
+    }
+    
+    .navbar-menu{
+      display: none;
+    }
+    .navbar-right{
+        gap: 15px;
+    }   
+    .navbar-right img{
+        width: 14px;
+    }
+    .navbar-right button{
+        padding: 5px 14px;
+        font-size: 11px;
+    }
+}

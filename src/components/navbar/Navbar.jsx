@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/frontend/assets.js";
 const Navbar = () => {
+  
   const [menu, setMenu] = useState("home");
   return (
     <div className="navbar">

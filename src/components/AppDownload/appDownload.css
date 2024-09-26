@@ -20,3 +20,23 @@
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 600px) {
+    .app-download {
+        margin: 50px 10px;
+        font-size: max(3vw, 20px);
+    }
+
+    .app-download-plateforms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+.app-download-plateforms img{
+    width: 170px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+}
