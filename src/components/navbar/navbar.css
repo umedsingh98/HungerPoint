@@ -1,6 +1,6 @@
 .navbar{
-    right: 0;
-    padding: 25px 40px;
+    padding: 25px 10px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +11,8 @@
     justify-content: center;
     align-items: center;
     width: 100px;
+    margin-left: 50px;
+
 }
 
 .navbar .logo h2{
@@ -43,6 +45,7 @@
     font-family: "Poppins";
     cursor: pointer;
     font-weight: 600;
+    margin-left: 80px;
 }
 
 .navbar-right{
@@ -123,6 +126,11 @@ right: -5px;
     .navbar{
         width: 100%;
     }
+
+    .navbar .logo{
+        margin-left: 25px;
+    }
+
     .navbar .logo h2{
         font-size: 18px;
     }
@@ -157,6 +165,11 @@ right: -5px;
       padding: 0;
       overflow-x: hidden;
     }
+
+    .navbar .logo{
+        margin-left: 25px;
+    }
+
     .navbar .logo h2{
         font-size: 18px;
     }
@@ -192,14 +205,18 @@ right: -5px;
       overflow-x: hidden;
     }
 
+    .navbar .logo{
+        margin-left: 25px;
+    }
+
     .navbar .logo h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .navbar .logo #point{
-        font-size: 18px;
+        font-size: 20px;
     }
     .navbar .logo img{
-        width: 30px;
+        width: 35px;
     }
     
     .navbar-menu{
@@ -209,10 +226,10 @@ right: -5px;
         gap: 15px;
     }   
     .navbar-right img{
-        width: 14px;
+        width: 20px;
     }
     .navbar-right button{
-        padding: 5px 14px;
-        font-size: 11px;
+        padding: 6px 18px;
+        font-size: 14px;
     }
 }

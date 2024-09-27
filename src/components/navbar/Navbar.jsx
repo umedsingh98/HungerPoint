@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/frontend/assets.js";
-const Navbar = () => {
+import { Link } from "react-router-dom";
+const Navbar = ({setShowLogin}) => {
   
   const [menu, setMenu] = useState("home");
   return (
     <div className="navbar">
-      <div className="logo">
+      <Link to="/"><div className="logo">
         <img src={assets.logo} alt="logo" />
         <h2>
           Hunger<span id="point">Point</span>
         </h2>
       </div>
-
+      </Link>
       <ul className="navbar-menu">
         <li
           onClick={() => {
@@ -50,10 +51,10 @@ const Navbar = () => {
       <div className="navbar-right">
         <img src={assets.search_icon} className="img-fluid" alt="search" />
         <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="basket" />
+          <Link to="/cart"><img src={assets.basket_icon} alt="basket" /></Link>
           <div className="dot"></div>
         </div>
-        <button className="signIn">Sign In</button>
+        <button onClick={() => setShowLogin(true)} className="signIn">Sign In</button>
       </div>
     </div>
   );
