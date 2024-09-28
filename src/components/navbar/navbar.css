@@ -12,7 +12,6 @@
     align-items: center;
     width: 100px;
     margin-left: 50px;
-
 }
 
 .navbar .logo h2{
@@ -206,7 +205,7 @@ right: -5px;
     }
 
     .navbar .logo{
-        margin-left: 25px;
+        margin-left: 35px;
     }
 
     .navbar .logo h2{
@@ -229,7 +228,7 @@ right: -5px;
         width: 20px;
     }
     .navbar-right button{
-        padding: 6px 18px;
+        padding: 6px 12px;
         font-size: 14px;
     }
 }
