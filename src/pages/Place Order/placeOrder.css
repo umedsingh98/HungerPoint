@@ -40,4 +40,17 @@ margin-bottom: 20px;
 
 .place-order .cart-total button{
     margin-top: 20px;
+    background-color: #000991;
+}
+
+.place-order .cart-total button:hover{
+    background-color: #000ebf;
+}
+
+@media (max-width: 650px) {
+
+    .place-order{
+        flex-direction: column;
+        gap: 10px;
+    }
 }

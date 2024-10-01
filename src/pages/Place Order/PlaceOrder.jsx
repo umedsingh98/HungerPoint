@@ -8,11 +8,11 @@ const PlaceOrder = () => {
       <div className="place-order-left">
         <p className="title">Delivery Information</p>
         <div className="multi-fields">
-          <input type="text" placeholder="Firstname" />
-          <input type="text" placeholder="Lastname" />
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Last name" />
         </div>
       
-          <input type="email" placeholder="Email Address" />
+          <input type="email" placeholder="Email address" />
           <input type="text" placeholder="House no." />
         <div className="multi-fields">
           <input type="text" placeholder="Area" />
@@ -34,12 +34,12 @@ const PlaceOrder = () => {
             <hr />
             <div className="cart-total-detail">
               <p>Delivery</p>
-              <p>{30}</p>
+              <p>{getTotalCartAmount() === 0 ? 0 : 30}</p>
             </div>
             <hr />
             <div className="cart-total-detail">
               <b>Total</b>
-              <b>{getTotalCartAmount() + 30}</b>
+              <b>{getTotalCartAmount() + (getTotalCartAmount() === 0 ? 0 : 30)}</b>
             </div>
           </div>
           <button id="proceed-payment" onClick={() => navigate("/order")}>

@@ -55,13 +55,14 @@
 }
 
 .signIn{
-    background: orange;
-    color: #ffffff;
+    background: #fa8128;
+    color: white;
     border: none;
     font-size: 16px;
+    font-weight: 600;
     font-family: "Poppins";
     border-radius: 40px;
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -222,13 +223,13 @@ right: -5px;
       display: none;
     }
     .navbar-right{
-        gap: 15px;
+        gap: 10px;
     }   
     .navbar-right img{
         width: 20px;
     }
     .navbar-right button{
         padding: 6px 12px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }

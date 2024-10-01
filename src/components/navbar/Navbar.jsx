@@ -18,22 +18,22 @@ const Navbar = ({setShowLogin}) => {
       </div>
       </Link>
       <ul className="navbar-menu">
-        <li
+        <Link to="/"
           onClick={() => {
             setMenu("home");
           }}
           className={menu === "home" ? "active" : ""}
         >
           Home
-        </li>
-        <li
+        </Link>
+        <Link
           onClick={() => {
             setMenu("menu");
           }}
           className={menu === "menu" ? "active" : ""}
         >
           Menu
-        </li>
+        </Link>
         <li
           onClick={() => {
             setMenu("mobile-app");
