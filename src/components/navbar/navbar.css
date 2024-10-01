@@ -223,13 +223,13 @@ right: -5px;
       display: none;
     }
     .navbar-right{
-        gap: 10px;
+        gap: 12px;
     }   
     .navbar-right img{
         width: 20px;
     }
     .navbar-right button{
-        padding: 8px 14px;
+        padding: 7px 13px;
         font-size: 12px;
     }
 }

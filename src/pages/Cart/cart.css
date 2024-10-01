@@ -121,11 +121,16 @@
 
 @media (max-width: 768px) {
 
+    .cart{
+        margin-top: 50px;
+    }
     .cart-bottom{
         flex-direction: column-reverse;
         gap: 10px;
     }
-
+    .cart-total{
+        margin-top: 20px;
+    }
     .cart-promocode{
         justify-content: start;
     }
