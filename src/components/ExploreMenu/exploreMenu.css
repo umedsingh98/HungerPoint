@@ -1,7 +1,7 @@
 .explore-menu{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px 30px;
 }
 
 .explore-menu h1{
@@ -35,7 +35,7 @@
 }
 
 .explore-menu-list-item img{
- width: 7.5vw;
+ width: 8vw;
  min-width: 80px;
  cursor: pointer;
  border-radius: 50%;
@@ -62,6 +62,10 @@
 }
 
 @media (max-width: 700px){
+
+    .explore-menu{
+        margin: 40px 25px;
+    }
 
     .explore-menu h1{
         font-size: 24px;

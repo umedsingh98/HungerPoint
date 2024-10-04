@@ -1,5 +1,5 @@
 .navbar{
-    padding: 25px 10px;
+    padding: 25px 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .navbar .logo h2{
@@ -205,6 +205,10 @@ right: -5px;
       overflow-x: hidden;
     }
 
+    .navbar{
+        padding: 25px 22px;
+    }
+
     .navbar .logo{
         margin-left: 35px;
     }
@@ -223,7 +227,7 @@ right: -5px;
       display: none;
     }
     .navbar-right{
-        gap: 12px;
+        gap: 15px;
     }   
     .navbar-right img{
         width: 20px;

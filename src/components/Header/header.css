@@ -1,9 +1,9 @@
 
 .header{
-    height: 40vw;
+    height: 44vw;
     margin-bottom: 20px;
     background: url("../../assets/frontend/header_img.png") no-repeat center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 
@@ -65,7 +65,7 @@
 
 @media (max-width: 1050px){
     .header{
-        height: 38vw;
+        height: 44vw;
     }
 
     .header-content{
@@ -75,6 +75,10 @@
 
 
 @media (max-width: 750px){
+
+    .header{
+        height: 50vw;
+    }
 
     .header-content{
         max-width: 55%;
@@ -93,13 +97,11 @@
 
 @media (max-width: 500px){
 
-    
 .header{
-    height: 60vw;
+    height: 70vw;
     margin-bottom: 20px;
-    background: url("../../assets/frontend/header_img.png") no-repeat center;
+    background: url("../../assets/frontend/header_img.png") no-repeat center center;
     background-size: cover;
-    border-radius: 15px;
     position: relative;
 }
     .header-content{
