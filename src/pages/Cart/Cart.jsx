@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import './cart.css';
 import { StoreContext } from '../../context/StoreContext';
 import { useNavigate } from 'react-router-dom';
-
+import trash from "../../assets/frontend/trash.png";
 const Cart = () => {
 
-  const { food_list, cartItems, removeFromCart, getTotalCartAmount} = useContext(StoreContext);
+  const {url, food_list, cartItems, removeFromCart, getTotalCartAmount} = useContext(StoreContext);
 
   const navigate = useNavigate();
 
@@ -28,12 +28,12 @@ const Cart = () => {
             return(
               <>
               <div className='cart-items-item'>
-                <img src={foodItem.image} alt="foodItemImage" />
+                <img src={url+"/images/"+foodItem.image} alt="foodItemImage" />
                 <p>{foodItem.name}</p>
                 <p>Rs. {foodItem.price}</p>
                 <p>{cartItems[foodItem._id]}</p>
                 <p>Rs. {cartItems[foodItem._id] * foodItem.price}</p>
-                <p onClick={() => {removeFromCart(foodItem._id)}} className='cross'>X</p>
+                <p onClick={() => {removeFromCart(foodItem._id)}} className='cross'><img style={{width: "25px", height: "25px"}} src={trash} alt="X" /></p>
               </div>
               <hr />
               </>

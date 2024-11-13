@@ -55,26 +55,29 @@
 }
 
 .signIn{
-    background: #fa8128;
-    color: white;
-    border: none;
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
     font-size: 16px;
     font-weight: 600;
+    letter-spacing: 1px;
     font-family: "Poppins";
     border-radius: 40px;
-    padding: 8px 16px;
+    padding: 7px 14px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 .signIn:hover{
-    background: green;
+    border: 1px solid tomato;
+    background: tomato;
     color: #ffffff;
 }
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid tomato;
+    color: tomato;
 }
 
 .navbar-search-icon{
@@ -91,6 +94,44 @@ top: -7px;
 right: -5px;
 }
 
+.navbar-profile{
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+display: flex;
+flex-direction: column;
+gap: 10px;
+background-color: #fff2ef;
+border-radius: 5px;
+border: 1px solid tomato;
+outline: 2px solid white;
+list-style: none;
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.nav-profile-dropdown li:hover{
+  color: tomato;
+}
 @media (max-width: 1050px){
     .navbar{
         width: 100%;

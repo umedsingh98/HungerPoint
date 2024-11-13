@@ -37,18 +37,18 @@
     background-color: #ffffff;
     color: black;
     font-family: "Poppins";
-    font-weight: 700;
-    letter-spacing: 0.8px;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding: 15px 20px;
     border: none;
-    font-size: max(1vw);
+    font-size: max(1.1vw);
     border-radius: 30px;
     cursor: pointer;
    
 }
 
 .header-content button:hover{
-  background-color: #FFA500;
+  background-color: black;
   color: white; 
   transition: 0.2s ease;
 }
